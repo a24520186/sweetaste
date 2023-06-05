@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 30px;
+}
+@media (max-width: 375px) {
+  header {
+    display: none;
+  }
+}
+header section.logo img {
+  width: 250px;
+  height: 80px;
+  flex: 2 1 400px;
+  display: flex;
+  align-items: flex-end;
+}
+header nav {
+  flex: 5 1 400px;
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+header nav ul li a {
+  color: #3f5d45;
+  text-decoration: none;
+  font-size: 1.35rem;
+  transition: all 0.2s ease;
+  padding-bottom: 0.3rem;
+}
+
+@media (min-width: 1024px) {
+  header.headerMobile {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  header.headerMobile {
+    display: block;
+  }
+}
+header.headerMobile div.nav {
+  display: flex;
+}
+header.headerMobile div.nav div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header.headerMobile div.nav div.navP1 {
+  margin-left: 40px;
+}
+header.headerMobile div.nav div.navP2 {
+  margin: 0px 60px 0px 40px;
+}
+header.headerMobile div.nav div.navP2 img {
+  width: 150px;
+  height: 150px;
+}
+
+@media (max-width: 375px) {
+  section.pc {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  section.mobile {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  section.mobile {
+    display: block;
+  }
+}
+section.mobile div img {
+  width: 370px;
+  height: 350px;
+}
+
+main section.allProduct {
+  display: flex;
+  margin-top: 50px;
+}
+@media (max-width: 375px) {
+  main section.allProduct {
+    display: none;
+  }
+}
+main section.allProduct div.left {
+  margin-right: 20px;
+  margin-left: 15px;
+}
+main section.allProduct div.left div.text1 {
+  width: 150px;
+  height: 50px;
+  color: #eaf0ed;
+  background-color: #3f5d45;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+}
+main section.allProduct div.left div.text2 {
+  width: 150px;
+  height: 50px;
+  color: #3f5d45;
+  background-color: #eaf0ed;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+main section.allProduct div.left div.text {
+  width: 150px;
+  height: 50px;
+  color: #3f5d45;
+  background-color: white;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+main section.allProduct div.right div.photos {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section.allProduct div.right div.photos img {
+  width: 300px;
+  height: 315px;
+  padding-right: 25px;
+}
+main section.allProduct div.right div.photos div div.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px #eaf0ed solid;
+  padding-right: 25px;
+  margin-right: 25px;
+}
+main section.allProduct div.right div.photos div div.content div.price {
+  color: #3f5d45;
+  padding-left: 0px;
+  font-size: 18px;
+  padding-left: 50px;
+}
+main section.allProduct div.right div.photos div div.name {
+  color: #3f5d45;
+  padding-left: 0px;
+}
+main section.allProduct div.right div.photos div div.order {
+  color: #3f5d45;
+  background-color: #eaf0ed;
+  padding-right: 25px;
+  margin-right: 25px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 10px 0px 10px 0px;
+  margin-bottom: 20px;
+}
+main section.allProduct div.choose {
+  display: flex;
+  border: 1px #eaf0ed solid;
+  margin-right: 265px;
+  margin-left: 300px;
+}
+main section.allProduct div.choose div img {
+  padding: 20px 20px 20px 20px;
+}
+main section.allProduct div.choose div.number1 {
+  padding: 20px 20px 20px 20px;
+  background-color: #3f5d45;
+  color: #eaf0ed;
+}
+main section.allProduct div.choose div.number {
+  padding: 20px 20px 20px 20px;
+}
+main section.allProductMob {
+  display: flex;
+  margin-top: 50px;
+}
+@media (min-width: 1024px) {
+  main section.allProductMob {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  main section.allProductMob {
+    display: block;
+  }
+}
+main section.allProductMob div.left {
+  margin-right: 20px;
+  margin-left: 15px;
+}
+main section.allProductMob div.left div.text1 {
+  width: 150px;
+  height: 50px;
+  color: #eaf0ed;
+  background-color: #3f5d45;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+}
+main section.allProductMob div.left div.text2 {
+  width: 150px;
+  height: 50px;
+  color: #3f5d45;
+  background-color: #eaf0ed;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+main section.allProductMob div.left div.text {
+  width: 150px;
+  height: 50px;
+  color: #3f5d45;
+  background-color: white;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+main section.allProductMob div.right div.photos {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section.allProductMob div.right div.photos img {
+  width: 300px;
+  height: 315px;
+  padding-right: 25px;
+}
+main section.allProductMob div.right div.photos div div.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px #eaf0ed solid;
+  padding-right: 25px;
+  margin-right: 25px;
+}
+main section.allProductMob div.right div.photos div div.content div.price {
+  color: #3f5d45;
+  padding-left: 0px;
+  font-size: 18px;
+  padding-left: 50px;
+}
+main section.allProductMob div.right div.photos div div.name {
+  color: #3f5d45;
+  padding-left: 0px;
+}
+main section.allProductMob div.right div.photos div div.order {
+  color: #3f5d45;
+  background-color: #eaf0ed;
+  padding-right: 25px;
+  margin-right: 25px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 10px 0px 10px 0px;
+  margin-bottom: 20px;
+}
+main section.allProductMob div.choose {
+  display: flex;
+  border: 1px #eaf0ed solid;
+  margin-right: 100px;
+}
+main section.allProductMob div.choose div img {
+  padding: 20px 20px 20px 20px;
+}
+main section.allProductMob div.choose div.number1 {
+  padding: 20px 20px 20px 20px;
+  background-color: #3f5d45;
+  color: #eaf0ed;
+}
+main section.allProductMob div.choose div.number {
+  padding: 20px 20px 20px 20px;
+}
+
+footer {
+  background-color: #3f5d45;
+}
+@media (max-width: 375px) {
+  footer {
+    display: none;
+  }
+}
+footer section.footerTop div.backgroundG {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-top: 80px;
+}
+footer section.footerTop div.backgroundG div.footerBook {
+  color: #eaf0ed;
+  padding-left: 30px;
+  padding-right: 80px;
+}
+footer section.footerTop div.backgroundG div.mail {
+  background-color: #eaf0ed;
+  width: 380px;
+  height: 56px;
+  margin-top: 30px;
+}
+footer section.footerTop div.backgroundG div.mail img.mailPic {
+  width: 40px;
+  height: 40px;
+  margin-left: 30px;
+}
+footer section.footerTop div.backgroundG div.mail span.yellow span img.arrow {
+  width: 50px;
+  height: 30px;
+  background-color: #ffe180;
+  margin-left: 100px;
+}
+footer section.footerTop div.backgroundG div img {
+  width: 60px;
+  height: 60px;
+}
+footer section div.footerBottom {
+  background-color: #eaf0ed;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer section div.footerBottom div img {
+  width: 150px;
+  height: 150px;
+}
+footer section div.footerBottom div img.footerBottomText {
+  margin-top: 50px;
+}
+footer section div.footerBottom div.logoSweet img {
+  margin-right: 900px;
+  margin-left: 80px;
+}
+footer section div.footerBottom div.footerContact div.footerContactText {
+  margin-left: 80px;
+  color: #3f5d45;
+}
+footer section div.footerBottom div.footerBottomIcon {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+footer section div.footerBottom div.footerBottomIcon div.footerCopyright p {
+  color: #3f5d45;
+  margin-left: 500px;
+}
+footer section div.footerBottom div.footerBottomIcon div img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+@media (min-width: 1024px) {
+  footer.mobileTop {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  footer.mobileTop {
+    display: block;
+  }
+}
+footer.mobileTop div.footerBack {
+  background-color: #3f5d45;
+}
+footer.mobileTop div.footerBack div.footerBook {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer.mobileTop div.footerBack div.footerBook div {
+  color: #eaf0ed;
+}
+footer.mobileTop div.footerBack div.footerBook div img {
+  width: 80px;
+  height: 80px;
+  padding-left: 30px;
+}
+footer.mobileTop div.footerBack div.footerIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+footer.mobileTop div.footerBack div.footerIcon div {
+  background-color: #eaf0ed;
+  width: 150px;
+}
+footer.mobileTop div.footerBack div.footerIcon div img.arrowBack {
+  margin-left: 110px;
+  background-color: #ffe180;
+}
+footer.mobileTop div.mobileBottom {
+  background-color: #eaf0ed;
+}
+footer.mobileTop div.mobileBottom div img {
+  margin: 30px 0px 30px 15px;
+  width: 200px;
+}
+footer.mobileTop div.mobileBottom div.text p {
+  color: #3f5d45;
+  margin-left: 15px;
+}
+footer.mobileTop div.mobileBottom div.icon div {
+  display: flex;
+  width: 100px;
+  height: 100px;
+}
+footer.mobileTop div.mobileBottom div p {
+  color: #3f5d45;
+  margin-left: 15px;
+  font-size: 16px;
+}/*# sourceMappingURL=product.css.map */

@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 30px;
+}
+@media (max-width: 375px) {
+  header {
+    display: none;
+  }
+}
+header section.logo img {
+  width: 250px;
+  height: 80px;
+  flex: 2 1 400px;
+  display: flex;
+  align-items: flex-end;
+}
+header nav {
+  flex: 5 1 400px;
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+header nav ul li a {
+  color: #3f5d45;
+  text-decoration: none;
+  font-size: 1.35rem;
+  transition: all 0.2s ease;
+  padding-bottom: 0.3rem;
+}
+
+@media (min-width: 1024px) {
+  header.headerMobile {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  header.headerMobile {
+    display: block;
+  }
+}
+header.headerMobile div.nav {
+  display: flex;
+}
+header.headerMobile div.nav div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header.headerMobile div.nav div.navP1 {
+  margin-left: 40px;
+}
+header.headerMobile div.nav div.navP2 {
+  margin: 0px 60px 0px 40px;
+}
+header.headerMobile div.nav div.navP2 img {
+  width: 150px;
+  height: 150px;
+}
+
+main section.firstPage div img {
+  padding: 0px 10px 0px 20px;
+  width: 940px;
+  height: 496px;
+}
+@media (max-width: 375px) {
+  main section.firstPage div img {
+    width: 375px;
+    height: 277px;
+  }
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+section div.daySpecial {
+  background-color: #ffe180;
+  writing-mode: vertical-lr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  position: relative;
+}
+section div.colorG {
+  writing-mode: vertical-lr;
+  background-color: #3f5d45;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  margin-left: 1px;
+}
+
+section.whyChoose {
+  display: flex;
+  writing-mode: vertical-lr;
+}
+@media (max-width: 375px) {
+  section.whyChoose {
+    display: none;
+  }
+}
+section.whyChoose div.backgroundAppleG {
+  background-color: #eaf0ed;
+  width: 1024px;
+  height: 460px;
+  margin-top: 50px;
+}
+section.whyChoose div.backgroundAppleG div {
+  color: #3f5d45;
+}
+section.whyChoose div.backgroundAppleG div img {
+  display: flex;
+}
+section.whyChoose div.backgroundAppleG div img.whyChoosePic {
+  width: 460px;
+  height: 460px;
+}
+@media (max-width: 375px) {
+  section.whyChoose div.backgroundAppleG div img.whyChoosePic {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  section.whyChooseMob {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  section.whyChooseMob {
+    display: block;
+  }
+}
+section.whyChooseMob div.whyText {
+  color: #8da291;
+  background-color: #eaf0ed;
+  padding: 20px 0px 20px 10px;
+}
+section.whyChooseMob div.backgroundAppleG {
+  margin-top: 35px;
+}
+section.whyChooseMob div.backgroundAppleG div {
+  color: #3f5d45;
+}
+section.whyChooseMob div.backgroundAppleG div img.whyChoosePicMob2 {
+  width: 380px;
+  height: 350px;
+}
+
+section.backgroundAppleG2 {
+  background-color: #eaf0ed;
+  width: 1024px;
+  height: 460px;
+  margin-top: 80px;
+}
+@media (max-width: 375px) {
+  section.backgroundAppleG2 {
+    display: none;
+  }
+}
+section.backgroundAppleG2 div {
+  writing-mode: vertical-lr;
+}
+section.backgroundAppleG2 div img.whyEatPic {
+  width: 460px;
+  height: 460px;
+}
+
+section.backgroundAppleG2Mob {
+  margin-top: 30px;
+}
+@media (min-width: 1024px) {
+  section.backgroundAppleG2Mob {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  section.backgroundAppleG2Mob {
+    display: block;
+  }
+}
+section.backgroundAppleG2Mob div img.whyEatPic {
+  width: 380px;
+  height: 350px;
+  margin-top: 40px;
+}
+section.backgroundAppleG2Mob div.whyEatTaxMob {
+  color: #8da291;
+  background-color: #eaf0ed;
+  padding: 20px 0px 20px 10px;
+}
+
+@media (max-width: 375px) {
+  section {
+    display: none;
+  }
+}
+section img.noReason {
+  width: 89px;
+  height: 327px;
+  margin: 50px 0px 50px 0px;
+}
+
+@media (min-width: 1024px) {
+  section.noReasonMob {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  section.noReasonMob {
+    display: block;
+  }
+}
+section.noReasonMob img.noReason {
+  width: 330px;
+  padding-left: 60px;
+}
+
+section.mainProduct div.mainProductPic img {
+  width: 300px;
+  height: 315px;
+  margin: 0 15px 0px 15px;
+}
+section.mainProduct div.mainProductPic div.mainProductText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px #eaf0ed solid;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+section.mainProduct div.mainProductPic div.mainProductText p {
+  margin-right: 30px;
+}
+section.mainProduct div.mainProductPic div.backgroundG {
+  background-color: #eaf0ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 35px;
+  color: #3f5d45;
+  font-size: 24px;
+}
+
+@media (min-width: 1024px) {
+  section.mainProductMob {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  section.mainProductMob {
+    display: block;
+  }
+}
+section.mainProductMob div.shopping {
+  color: #3f5d45;
+  background-color: #eaf0ed;
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  font-size: 24px;
+}
+section.mainProductMob div.content {
+  display: flex;
+  color: #3f5d45;
+  padding-left: 50px;
+  border: 1px #eaf0ed solid;
+  font-size: 22px;
+}
+section.mainProductMob div.content div.text {
+  margin-right: 70px;
+}
+section.mainProductMob div img {
+  width: 380px;
+  height: 350px;
+}
+
+footer {
+  background-color: #3f5d45;
+}
+@media (max-width: 375px) {
+  footer {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  footer {
+    display: block;
+  }
+}
+footer section.footerTop div.backgroundG {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-top: 80px;
+}
+footer section.footerTop div.backgroundG div.footerBook {
+  color: #eaf0ed;
+  padding-left: 30px;
+  padding-right: 80px;
+}
+footer section.footerTop div.backgroundG div.mail {
+  background-color: #eaf0ed;
+  width: 380px;
+  height: 56px;
+  margin-top: 30px;
+}
+footer section.footerTop div.backgroundG div.mail img.mailPic {
+  width: 40px;
+  height: 40px;
+  margin-left: 30px;
+}
+footer section.footerTop div.backgroundG div.mail span.yellow span img.arrow {
+  width: 50px;
+  height: 30px;
+  background-color: #ffe180;
+  margin-left: 100px;
+}
+footer section.footerTop div.backgroundG div img {
+  width: 60px;
+  height: 60px;
+}
+footer section div.footerBottom {
+  background-color: #eaf0ed;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer section div.footerBottom div img {
+  width: 150px;
+  height: 150px;
+}
+footer section div.footerBottom div img.footerBottomText {
+  margin-top: 50px;
+}
+footer section div.footerBottom div.logoSweet img {
+  margin-right: 900px;
+  margin-left: 80px;
+}
+footer section div.footerBottom div.footerContact div.footerContactText {
+  margin-left: 80px;
+  color: #3f5d45;
+}
+footer section div.footerBottom div.footerBottomIcon {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+footer section div.footerBottom div.footerBottomIcon div.footerCopyright p {
+  color: #3f5d45;
+  margin-left: 500px;
+}
+footer section div.footerBottom div.footerBottomIcon div img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+@media (min-width: 1024px) {
+  footer.mobileTop {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  footer.mobileTop {
+    display: block;
+  }
+}
+footer.mobileTop div.footerBack {
+  background-color: #3f5d45;
+}
+footer.mobileTop div.footerBack div.footerBook {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer.mobileTop div.footerBack div.footerBook div {
+  color: #eaf0ed;
+}
+footer.mobileTop div.footerBack div.footerBook div img {
+  width: 80px;
+  height: 80px;
+  padding-left: 30px;
+}
+footer.mobileTop div.footerBack div.footerIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+footer.mobileTop div.footerBack div.footerIcon div {
+  background-color: #eaf0ed;
+  width: 150px;
+}
+footer.mobileTop div.footerBack div.footerIcon div img.arrowBack {
+  margin-left: 110px;
+  background-color: #ffe180;
+}
+footer.mobileTop div.mobileBottom {
+  background-color: #eaf0ed;
+}
+footer.mobileTop div.mobileBottom div img {
+  margin: 30px 0px 30px 15px;
+  width: 200px;
+}
+footer.mobileTop div.mobileBottom div.text p {
+  color: #3f5d45;
+  margin-left: 15px;
+}
+footer.mobileTop div.mobileBottom div.icon div {
+  display: flex;
+  width: 100px;
+  height: 100px;
+}
+footer.mobileTop div.mobileBottom div p {
+  color: #3f5d45;
+  margin-left: 15px;
+  font-size: 16px;
+}/*# sourceMappingURL=style.css.map */

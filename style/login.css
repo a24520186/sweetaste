@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 30px;
+}
+@media (max-width: 375px) {
+  header {
+    display: none;
+  }
+}
+header section.logo img {
+  width: 250px;
+  height: 80px;
+  flex: 2 1 400px;
+  display: flex;
+  align-items: flex-end;
+}
+header nav {
+  flex: 5 1 400px;
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+header nav ul li a {
+  color: #3f5d45;
+  text-decoration: none;
+  font-size: 1.35rem;
+  transition: all 0.2s ease;
+  padding-bottom: 0.3rem;
+}
+
+@media (min-width: 1024px) {
+  header.headerMobile {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  header.headerMobile {
+    display: block;
+  }
+}
+header.headerMobile div.nav {
+  display: flex;
+}
+header.headerMobile div.nav div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header.headerMobile div.nav div.navP1 {
+  margin-left: 40px;
+}
+header.headerMobile div.nav div.navP2 {
+  margin: 0px 60px 0px 40px;
+}
+header.headerMobile div.nav div.navP2 img {
+  width: 150px;
+  height: 150px;
+}
+
+main div.content {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 375px) {
+  main div.content {
+    display: none;
+  }
+}
+main div.content div.left {
+  background-color: #3f5d45;
+  width: 280px;
+  height: 270px;
+  text-align: center;
+  margin-left: 60px;
+}
+main div.content div.left div.login {
+  color: #eaf0ed;
+  padding: 30px 0px 30px 0px;
+}
+main div.content div.left div.mail {
+  background-color: #eaf0ed;
+  color: #8da291;
+  padding: 10px 0px 10px 0px;
+  margin: 0px 50px 10px 50px;
+  font-size: 10px;
+}
+main div.content div.left div.password {
+  background-color: #eaf0ed;
+  color: #8da291;
+  padding: 10px 0px 10px 0px;
+  margin: 0px 50px 10px 50px;
+  font-size: 10px;
+}
+main div.content div.left div.remember {
+  color: #eaf0ed;
+  text-align: left;
+  padding-left: 60px;
+  font-size: 12px;
+}
+main div.content div.left div.account {
+  background-color: #ffe180;
+  padding: 20px 0px 20px 0px;
+  margin-top: 20px;
+  color: #3f5d45;
+}
+main div.content div.right {
+  background-color: #eaf0ed;
+  width: 300px;
+}
+main div.content div.right div {
+  text-align: center;
+}
+main div.content div.right div img {
+  width: 150px;
+  height: 60px;
+  background-color: white;
+  margin-bottom: 15px;
+}
+main div.content div.right div.facebook img {
+  width: 150px;
+  height: 60px;
+  margin-top: 35px;
+}
+main div.content div.right div.text {
+  margin-top: 35px;
+  color: #8da291;
+}
+@media (min-width: 1024px) {
+  main div.contentMob {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  main div.contentMob {
+    display: block;
+  }
+}
+main div.contentMob div.loginTop div.login {
+  background-color: #3f5d45;
+  color: #eaf0ed;
+  height: 60px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+main div.contentMob div.loginTop div.icon {
+  display: flex;
+  background-color: #eaf0ed;
+}
+main div.contentMob div.loginTop div.icon div {
+  display: flex;
+  height: 20px;
+  background-color: #ffffff;
+  margin: 20px 20px 20px 20px;
+}
+main div.contentMob div.loginTop div.icon div img {
+  padding-right: 25px;
+}
+main div.contentMob div.loginTop div.info {
+  background-color: #3f5d45;
+  text-align: center;
+}
+main div.contentMob div.loginTop div.info div.enter {
+  padding: 30px 30px 10px 30px;
+}
+main div.contentMob div.loginTop div.info div.enter div.mail {
+  background-color: #eaf0ed;
+  color: #8da291;
+  font-size: 10px;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+main div.contentMob div.loginTop div.info div.enter div.password {
+  background-color: #eaf0ed;
+  color: #8da291;
+  font-size: 10px;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+}
+main div.contentMob div.loginTop div.info div.enter div.remember {
+  text-align: left;
+  padding: 10px 0px 0px 20px;
+  color: #eaf0ed;
+}
+main div.contentMob div.loginTop div.info div.enter div.account {
+  background-color: #ffe180;
+  padding: 10px 0px 10px 0px;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #3f5d45;
+}
+@media (max-width: 375px) {
+  footer {
+    display: none;
+  }
+}
+footer section.footerTop div.backgroundG {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-top: 80px;
+}
+footer section.footerTop div.backgroundG div.footerBook {
+  color: #eaf0ed;
+  padding-left: 30px;
+  padding-right: 80px;
+}
+footer section.footerTop div.backgroundG div.mail {
+  background-color: #eaf0ed;
+  width: 380px;
+  height: 56px;
+  margin-top: 30px;
+}
+footer section.footerTop div.backgroundG div.mail img.mailPic {
+  width: 40px;
+  height: 40px;
+  margin-left: 30px;
+}
+footer section.footerTop div.backgroundG div.mail span.yellow span img.arrow {
+  width: 50px;
+  height: 30px;
+  background-color: #ffe180;
+  margin-left: 100px;
+}
+footer section.footerTop div.backgroundG div img {
+  width: 60px;
+  height: 60px;
+}
+footer section div.footerBottom {
+  background-color: #eaf0ed;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer section div.footerBottom div img {
+  width: 150px;
+  height: 150px;
+}
+footer section div.footerBottom div img.footerBottomText {
+  margin-top: 50px;
+}
+footer section div.footerBottom div.logoSweet img {
+  margin-right: 900px;
+  margin-left: 80px;
+}
+footer section div.footerBottom div.footerContact div.footerContactText {
+  margin-left: 80px;
+  color: #3f5d45;
+}
+footer section div.footerBottom div.footerBottomIcon {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+footer section div.footerBottom div.footerBottomIcon div.footerCopyright p {
+  color: #3f5d45;
+  margin-left: 500px;
+}
+footer section div.footerBottom div.footerBottomIcon div img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+@media (min-width: 1024px) {
+  footer.mobileTop {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  footer.mobileTop {
+    display: block;
+  }
+}
+footer.mobileTop div.footerBack {
+  background-color: #3f5d45;
+}
+footer.mobileTop div.footerBack div.footerBook {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer.mobileTop div.footerBack div.footerBook div {
+  color: #eaf0ed;
+}
+footer.mobileTop div.footerBack div.footerBook div img {
+  width: 80px;
+  height: 80px;
+  padding-left: 30px;
+}
+footer.mobileTop div.footerBack div.footerIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+footer.mobileTop div.footerBack div.footerIcon div {
+  background-color: #eaf0ed;
+  width: 150px;
+}
+footer.mobileTop div.footerBack div.footerIcon div img.arrowBack {
+  margin-left: 110px;
+  background-color: #ffe180;
+}
+footer.mobileTop div.mobileBottom {
+  background-color: #eaf0ed;
+}
+footer.mobileTop div.mobileBottom div img {
+  margin: 30px 0px 30px 15px;
+  width: 200px;
+}
+footer.mobileTop div.mobileBottom div.text p {
+  color: #3f5d45;
+  margin-left: 15px;
+}
+footer.mobileTop div.mobileBottom div.icon div {
+  display: flex;
+  width: 100px;
+  height: 100px;
+}
+footer.mobileTop div.mobileBottom div p {
+  color: #3f5d45;
+  margin-left: 15px;
+  font-size: 16px;
+}/*# sourceMappingURL=login.css.map */
